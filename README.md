@@ -24,8 +24,9 @@ If python was installed correctly, you'll see an output similar to the following
 Virtualenv is a python library that helps us build an isolated (virtual) development environment.
 
 - From your commandline, install `virtualenv` by running the following command: `pip install virtualenv`
-- Move to the directory of this repository, and then run `virtualenv ml-workshop`
-- Activate the environment. On Mac OS or Linus, run `source ml-workshop/bin/activate`. On Windows, run `ml-workshop\Scripts\activate`
+- Move to the directory of this repository: `cd machine-learning-workshop`
+- Create the virtual environment: `virtualenv ml-workshop`
+- Activate the environment. On Mac OS or Linux, run `source ml-workshop/bin/activate`. On Windows, run `ml-workshop\Scripts\activate`
 
 ### 4) Install required libraries.
 After you've activated `virtualenv`, run the following command:
