@@ -6,7 +6,7 @@ This two-day workshop is intended for software developers who have little to no 
 
 The following instructions will guide you through setting up so that you have all the software and datasets needed for the workshop.
 
-### 1) Clone this repository.
+### 1) Clone this repository
 ### 2) Install Python
 If you're using Mac OS, python is already installed so you can skip this step. If you haven't done so already, you'll need to have python 2.7 installed on your machine.  If you're using Windows, you can download python 2.7 from [here](https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi).
 
