@@ -33,3 +33,10 @@ After you've activated `virtualenv`, run the following command:
 `pip install -r pip-requirements.txt`
 
 The command above should install all the software we'll need for the workshop.
+
+### 5) Create an account [Kaggle](https://www.kaggle.com/)
+You'll need this account for some of the projects we'll be doing.
+
+### 6) Download the datasets
+- [Arabic Handwritten Digits Dataset](https://www.kaggle.com/mloey1/ahdd1)
+- [MNIST Dataset](https://www.kaggle.com/c/digit-recognizer/data) (download both `train.csv` and `test.csv`)
