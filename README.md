@@ -1,3 +1,5 @@
 # machine-learning-workshop
 
-TODO
+pip install virtualenv
+virtualenv ml-workshop
+source ml-workshop/bin/activate
