@@ -34,6 +34,8 @@ After you've activated `virtualenv`, run the following command:
 
 The command above should install all the software we'll need for the workshop.
 
+*Windows Users:* If you get an error asking you to install the Visual C++ compiler, you can download it from [here](https://www.microsoft.com/en-us/download/confirmation.aspx?id=44266)
+
 ### 5) Create an account [Kaggle](https://www.kaggle.com/)
 You'll need this account for some of the projects we'll be doing.
 
