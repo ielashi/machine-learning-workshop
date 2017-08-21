@@ -4,9 +4,9 @@ from keras.utils.np_utils import to_categorical
 
 def load_arabic_digits():
   X_train, y_train = load_arabic_digits_helper(
-      '../datasets/train-digits.csv', '../datasets/train-digits-labels.csv')
+      '../datasets/arabic-digits/train-images.csv', '../datasets/arabic-digits/train-labels.csv')
   X_test, y_test = load_arabic_digits_helper(
-      '../datasets/test-digits.csv', '../datasets/test-digits-labels.csv')
+      '../datasets/arabic-digits/test-images.csv', '../datasets/arabic-digits/test-labels.csv')
 
   return ((X_train, y_train), (X_test, y_test))
 
