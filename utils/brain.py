@@ -36,7 +36,7 @@ class Brain(object):
 
   def predict_many(self, images):
     images = self._preprocess_images(images)
-    return self.model.predict(images)
+    return self.model.predict_classes(images)
 
   def predict(self, image):
     return self.predict_many(np.array([image]))

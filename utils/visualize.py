@@ -4,12 +4,13 @@ import random
 # Make figures bigger.
 plt.rcParams['figure.figsize'] = (20.0, 10.0)
 
-def show_sample(images, labels):
+def show_sample(images, labels=None):
   for i in range(0, 12):
     random_idx = random.randint(0, len(images))
 
     sp = plt.subplot(3, 4, i + 1)
-    sp.set_title(labels[random_idx], fontsize=16)
+    if labels is not None:
+      sp.set_title(labels[random_idx], fontsize=16)
     sp.axis('off')
     plt.imshow(images[random_idx])
 

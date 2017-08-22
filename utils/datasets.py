@@ -24,18 +24,21 @@ def load_arabic_digits_helper(items_file, labels_file):
   return (items, labels) 
 
 
-def load_mnist(train_file='../datasets/mnist/train.csv', test_file='../datasets/mnist/test.csv'):
+def load_english_digits(train_file='datasets/mnist/train.csv'):
   train = pd.read_csv(train_file)
-  test = pd.read_csv(test_file)
 
   X_train = train.iloc[:, 1:].values
   X_train = X_train.reshape(X_train.shape[0], 28, 28)
     
   y_train = train.iloc[:, 0].values
     
-  X_test = test.values
-    
-  return (X_train, y_train, X_test)
+  return (X_train, y_train)
+
+
+def load_english_digits_test(test_file='datasets/mnist/test.csv'):
+  X_test = pd.read_csv(test_file).values
+  X_test = X_test.reshape(X_test.shape[0], 28, 28)
+  return X_test
 
 """
 def load_arabic_characters():
