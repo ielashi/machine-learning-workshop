@@ -27,6 +27,18 @@ To set up the development environment, you'll need to do the following:
 - Install the needed libraries:
   * `conda install matplotlib numpy pandas jupyter theano`
   * `conda install -c conda-forge keras`
+- Configure Keras (the library we'll use to do machine learning:
+  * From your user directory go to the `.keras` directory.
+  * If `keras.json` isn't present in the folder, create it. If it's there, update it to make it look like this:
+  
+  ```
+  {
+    "floatx": "float32",
+    "epsilon": 1e-07,
+    "backend": "theano",
+    "image_dim_ordering": "th"
+  }
+  ```
 
 ### Set up development environment (Mac)
 
@@ -60,3 +72,17 @@ After you've activated `virtualenv`, run the following command:
 `pip install -r pip-requirements.txt`
 
 The command above should install all the software we'll need for the workshop.
+
+#### 5) Configure Configure Keras
+Keras is the library we'll use to do machine learning.
+  * `cd ~/.keras`
+  * If `keras.json` isn't present in the folder, create it. If it's there, update it to make it look like this:
+  
+  ```
+  {
+    "floatx": "float32",
+    "epsilon": 1e-07,
+    "backend": "theano",
+    "image_dim_ordering": "th"
+  }
+  ```
