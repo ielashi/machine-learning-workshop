@@ -62,6 +62,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Virtualenv is a python library that helps us build an isolated (virtual) development environment.
 
 - From your commandline, install `virtualenv` by running the following command: `pip install virtualenv`
+- Run the following command: `sudo /usr/bin/easy_install virtualenv`
 - Move to the directory of this repository: `cd machine-learning-workshop`
 - Create the virtual environment: `virtualenv ml-workshop`
 - Activate the environment: `source ml-workshop/bin/activate`
