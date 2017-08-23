@@ -44,39 +44,17 @@ To set up the development environment, you'll need to do the following:
 
 #### 1) Clone this repository.
 
-#### 2) Install Python
-Go to your terminal and type `python`. If you get `command not found` that means Python isn't installed. You can install it by doing the following:
+#### 2) Download and install Anaconda (Python 2.7) from [here](https://www.continuum.io/downloads).
 
-- Install `brew` by entering: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- Type `brew install python`
-
-If all goes well you should type `python` in your terminal and see something like this:
-
-```
-Python 2.7.10 (default, Feb  7 2017, 00:08:15)
-[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.34)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
-```
-
-#### 3) Install Virtualenv
-Virtualenv is a python library that helps us build an isolated (virtual) development environment.
-
-- From your commandline, install `pip` by running the following command: `sudo easy_install pip`
-- From your commandline, install `virtualenv` by running the following command: `sudo pip install virtualenv`
-- Move to the directory of this repository: `cd machine-learning-workshop`
-- Create the virtual environment: `virtualenv ml-workshop`
-- Activate the environment: `source ml-workshop/bin/activate`
-
-#### 4) Install required libraries.
-After you've activated `virtualenv`, run the following command:
-
-`pip install -r pip-requirements.txt`
-
-The command above should install all the software we'll need for the workshop.
-
-#### 5) Configure Configure Keras
-Keras is the library we'll use to do machine learning.
-  * `cd ~/.keras`
+#### 3) Set up the development environment.
+To set up the development environment, you'll need to do the following:
+- In your terminal run: `conda create -n ml-workshop`. This creates a sandbox where we'll install all the software we'll need.
+- Activate the environment: `source activate ml-workshop`
+- Install the needed libraries:
+  * `conda install matplotlib numpy pandas jupyter theano`
+  * `conda install -c conda-forge keras`
+- Configure Keras (the library we'll use to do machine learning:
+  * Go to `~/.keras` directory.
   * If `keras.json` isn't present in the folder, create it. If it's there, update it to make it look like this:
   
   ```
