@@ -22,8 +22,11 @@ You'll need this account for some of the projects we'll be doing.
 #### 3) Set up the development environment.
 To set up the development environment, you'll need to do the following:
 - Open `Anaconda Prompt`
-- Move to the directory of this repository: `cd machine-learning-workshop`
-- Load the environment: `conda env create -f windows-environment.yml`. This will install the needed software libraries.
+- Run `conda create -n ml-workshop`. This creates a sandbox where we'll install all the software we'll need.
+- Activate the environment: `activate ml-workshop`
+- Install the needed libraries:
+  * `conda install matplotlib numpy pandas jupyter theano`
+  * `conda install -c conda-forge keras`
 
 ### Set up development environment (Mac)
 
