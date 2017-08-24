@@ -40,11 +40,27 @@ def load_english_digits_test(test_file='datasets/mnist/test.csv'):
   X_test = X_test.reshape(X_test.shape[0], 28, 28)
   return X_test
 
-"""
+
 def load_arabic_characters():
-  X_train, y_train = load_arabic_digits_helper(
+  X_train, y_train = load_arabic_characters_helper(
       'datasets/arabic-characters/csvTrainImages 13440x1024.csv', 'datasets/arabic-characters/csvTrainLabel 13440x1.csv')
 
   return (X_train, y_train)
-"""
 
+
+def load_arabic_characters_test():
+  return load_arabic_characters_helper(
+      'datasets/arabic-characters/csvTestImages 3360x1024.csv', 'datasets/arabic-characters/csvTestLabel 3360x1.csv')
+
+
+def load_arabic_characters_helper(items_file, labels_file):
+  items = pd.read_csv(items_file, header=None).values
+  labels = pd.read_csv(labels_file, header=None).values
+
+  # Shape the items from a 1D vector into a 32x32 2D vector (image)
+  items = items.reshape(items.shape[0], 32, 32)
+
+  # Rotate image for easier visualization
+  items = np.array([np.fliplr(np.rot90(d, k=3)) for d in items])
+
+  return (items, labels) 
