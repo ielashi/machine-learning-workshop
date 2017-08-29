@@ -12,6 +12,7 @@ You'll need this account for some of the projects we'll be doing.
 ### Download the datasets
 - [Arabic Handwritten Digits Dataset](https://www.kaggle.com/mloey1/ahdd1)
 - [MNIST Dataset](https://www.kaggle.com/c/digit-recognizer/data) (download both `train.csv` and `test.csv`)
+- [Arabic Handwritten Characters Dataset](https://www.kaggle.com/mloey1/ahcd1)
 
 ### Set up development environment (Windows)
 
