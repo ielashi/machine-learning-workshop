@@ -8,13 +8,13 @@ This repository contains material for a short workshop on machine learning. It i
   * What is learning?
   * What is programmed vs what is learned
   * A high-level look into brains (neurons and synapses)
-  * Code deep-dive: building a brain and teaching it to recognize Arabic digits.
+  * Code deep-dive: building a brain and teaching it to recognize Arabic digits
   * Exercise 1: teaching a brain to recognize English digits
 - Day 2 ([Slides](http://bit.ly/2wTmH1C))
   * Recap of day 1
   * A gentle introduction to neural networks
   * Building a neural network using Keras
-  * Exercise 2: building a neural network to recognize Arabic characters.
+  * Exercise 2: building a neural network to recognize Arabic characters
 
 ## Setting up (do this before the workshop)
 
