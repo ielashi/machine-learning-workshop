@@ -4,13 +4,13 @@ This repository contains material for a short workshop on machine learning. It i
 
 ## Workshop Outline
 
-- Day 1 ([Slides](http://bit.ly/2gqTYu8))
+- Day 1
   * What is learning?
   * What is programmed vs what is learned
   * A high-level look into brains (neurons and synapses)
   * Code deep-dive: building a brain and teaching it to recognize Arabic digits
   * Exercise 1: teaching a brain to recognize English digits
-- Day 2 ([Slides](http://bit.ly/2wTmH1C))
+- Day 2
   * Recap of day 1
   * A gentle introduction to neural networks
   * Building a neural network using Keras
