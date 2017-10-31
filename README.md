@@ -1,4 +1,4 @@
-# Machine Learning for Software Developers
+# Machine Learning for Software Developers ([Video](https://www.youtube.com/watch?v=9x1vF8Jl_Qs))
 
 This repository contains material for a short workshop on machine learning. It is intended for software developers who have little to no experience in the field.
 
